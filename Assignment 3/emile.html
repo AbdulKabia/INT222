@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mortgage Form</title>
+    <link rel="stylesheet" href="css/normalize.css"   type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/mortgage.css"     type="text/css" media="screen" />
+    <script src="javascript/emile.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <form method="post" id="mortgage" name="mortgage" action="https://zenit.senecac.on.ca/~emile.ohan/cgi-bin/assign3.cgi" onsubmit="return formValidation();">
+	<div id="Container">
+    	<div id="Left">
+        	<div class="formName">Mortgage Calculation</div>
+            <hr/>
+            <br/>
+            <fieldset class="Fields" id="mortDetails">
+                	<legend>Mortgage Details</legend>
+                    	<table>
+                        	<tr>
+                            	<td>Amortization</td>
+                              <td><input type="text" name="amortization" id="amortization" size="3" maxlength="2"/></td>
+                          </tr>
+                          <tr>
+                            	<td>Interest Rate</td>
+                              <td><input type="text" name="intRate" id="intRate" size="7" maxlength="6"/></td>
+                          </tr>
+                          <tr>
+                            	<td>Mortgage Year</td>
+                              <td><input type="text" name="mortYear" id="mortYear" size="5" maxlength="4"/></td>
+                          </tr>
+                          <tr>
+                            	<td>Mortgage Months</td>
+                              <td><input type="text" name="mortMonth" id="mortMonth" size="4" maxlength="2"/></td>
+                          </tr>
+                      </table>
+            </fieldset>
+            <hr/>
+            <br/>
+            <br/>
+            <br/>
+            <div id="cent">
+              <input type="submit" value="Submit Request" class="btn">
+              <br/><br/>
+              <input type="reset" value="Clear Form" class="btn" onclick="clearShowErrors();">
+            </div>
+
+        </div>
+        <div id="Right">
+        	<div id="innerLeft">
+        		<fieldset class="Fields">
+                	<legend>Personal Information</legend>
+                    	<table>
+                        	<tr>
+                            	<td>User ID</td>
+                              <td><input type="text" name="userId" id="userId" size="10" maxlength="10"/></td>
+                          </tr>
+                          <tr>
+                            	<td>User Name</td>
+                              <td><input type="text" name="client" id="client" maxlength="12"/></td>
+                          </tr>
+                      </table>
+            </fieldset>
+
+            <fieldset class="Fields">
+                	<legend>Financial / Property Information</legend>
+                    <table>
+                      <tr>
+                        <td>Property Value</td>
+                        <td><input type="text" name="propValue" id="propValue" size="7" maxlength="6"/></td>
+                      </tr>
+                      <tr>
+                        <td>Down Payment</td>
+                        <td><input type="text" name="downPay" id="downPay" size="7" maxlength="6"/></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select id="propLocation" name="propLocation" size="4">
+                            <option value="Select Location">Selection Location</option>
+                            <option value="Toronto">Toronto</option>
+                            <option value="Ontario">Ontario</option>
+                            <option value="Ottawa">Ottawa</option>
+                            <option value="Edmonton">Edmonton</option>
+  						            </select>
+                        </td>
+                        <td>
+                        <select id="income" name="income" size="4">
+                            <option value="Select Income">Select Income</option>
+                            <option value="Under 30,000">Under 30,000</option>
+                            <option value="30,001 - 40,000">30,001 - 40,000</option>
+                            <option value="40,001 - 50,000">40,001 - 50,000</option>
+                            <option value="50,001 - 60,000">50,001 - 60,000</option>
+                            <option value="60,001 - 70,000">60,001 - 70,000</option>
+                            <option value="70,001 - 80,000">70,001 - 80,000</option>
+                            <option value="80,001 - 90,000">80,001 - 90,000</option>
+                            <option value="90,001 - 100,000">90,001 - 100,000</option>
+                            <option value="100,001 - 110,000">100,001 - 110,000</option>
+                            <option value="110,001 - 120,000">110,001 - 120,000</option>
+                        </select>
+                      </td>
+                      </tr>
+                      </table>
+                      <hr/>
+                    <p>Property Type</p>
+                    <input type="radio" name="propDetails" id="propDetails-1" value="Detached" />Detached
+                    <input type="radio" name="propDetails" id="propDetails-2" value="Semi Detached" />Semi Detached
+                    <input type="radio" name="propDetails" id="propDetails-3" value="Town House" />Town House<br>
+                    <input type="radio" name="propDetails" id="propDetails-4" value="Row House" />Row House
+                    <input type="radio" name="propDetails" id="propDetails-5" value="Condo" />Condo
+                    <input type="radio" name="propDetails" id="propDetails-6" value="Vacant Land" />Vacant Land
+            </fieldset>
+            <fieldset class="Fields" id="bottom">
+                	<legend>Comments</legend>
+                        <textarea name="comments" id="comments" rows="2" cols="30"></textarea>
+                </fieldset>
+            </div>
+
+            <div id="innerRight">
+            	<fieldset class="Fields">
+                <legend>Monthly Payment</legend>
+                <div id="center">
+                  <input type="text" size="8" maxlength="8" readonly="readonly"/>
+                  <input type='button' value='Calculate Monthly Payment' onclick='calculatePayment();' id="payment"/>
+                </div>
+              </fieldset>
+              <div id="messages" class="Fields">
+              </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="jsActive" id="jsActive" value="N"/>
+    <input type="hidden" name="lastName" id="lastName" value="Kabia"/>
+    <input type="hidden" name="studentId" id="studentId" value="int222_161a09"/>
+    </form>
+    <nav>
+      <div id="nav-wrapper">
+        <ul>
+          <li><a href="../">My Zenit Account</a></li>
+          <li><a href="javascript/mortgage.js">My JavaScript</a></li>
+          <li><a href="css/mortgage.css">My CSS</a></li>
+          <li><a href="honesty.html">My Honesty</a></li>
+        </ul>
+      </div>
+    </nav>
+   <footer>
+   		 <script>
+          var dt=new Date(document.lastModified);   // Get document last modified date
+          document.write('This page was last updated on '+dt.toLocaleString())
+       </script>
+
+   </footer>
+
+  </body>
+</html>

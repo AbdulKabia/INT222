@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>assignment 1 - list.html</title>
+    <link rel="stylesheet" href="https://zenit.senecac.on.ca/~emile.ohan/int222/assignments/assignment-01/normalize.css"  type="text/css" media="screen" /> 
+    <link rel="stylesheet" href="https://zenit.senecac.on.ca/~emile.ohan/int222/assignments/assignment-01/master.css" type="text/css" media="screen" /> 
+    <link rel="stylesheet" href="css/mycss.css" type="text/css" media="screen" /> 
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../">Main Home</a></li>
+        <li><a href="index.html">Assignment 1 Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="list.html">Lists with CSS</a></li>
+        <li><a href="text.html">Text with CSS</a></li>
+        <li><a href="table.html">Tables with CSS</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="honesty.html">Honesty</a></li>
+        <li><a href="css/mycss.css">CSS Used</a></li>
+      </ul>
+    </nav>
+    <div id="content">
+      <div id="mcontent">
+        <header>
+          <p id="pageHeader">Lists With CSS</p>
+        </header>
+        <!-- Your code goes here -->
+        <!-- Unordered List -->
+        <h4>An unordered list of groceries</h4>
+        <ul id="unorderList">
+        	<li>Chips and salsa</li>
+            <li>Brownies</li>
+            <li>Tomato</li>
+        </ul>
+        <hr/>
+        
+        <!-- Ordered List -->
+        <h4>An ordered list of top Iron Man movies</h4>
+        <ol id="orderList">
+        	<li>Iron Man</li>
+            <li>Iron Man 2</li>
+           	<li>Iron Man 3</li>
+        </ol>
+        <hr/>
+        
+        <!-- Nested List -->
+        <h4>A nested list of cute nicknames for girlfriend</h4>
+        <ul id="mainList">
+        	<li>Princess</li>
+            <li>Babe
+            	<ol id="subList">
+                	<li>Baby</li>
+                    <li>Baby-Bear</li>
+                    <li>Bab</li>
+                </ol>
+            </li>
+            <li>Sweetheart</li>    
+        </ul>
+      	<hr/>
+        
+        <!-- Detailed List -->
+        <h4>A detailed list of a definition of a word</h4>
+        <dl>
+        	<dt>Poignant</dt>
+         		<dd>adjective: evoking a keen sense of sadness or regret.</dd>
+         		<dd>archaic: sharp or pungent in taste or smell.</dd>
+        </dl>
+
+        <!-- Your code ends here -->
+      </div>
+    </div>
+    <!-- Defining Footer -->
+    <footer>
+        <script>
+          var dt=new Date(document.lastModified);   // Get document last modified date
+          document.write('This page was last updated on '+dt.toLocaleString()) 
+        </script>
+    </footer>
+  </body>
+</html>

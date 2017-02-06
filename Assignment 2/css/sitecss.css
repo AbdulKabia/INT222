@@ -1,0 +1,433 @@
+/* *********************************************************
+   		CSS Common to ALL pages
+   ********************************************************* */
+body {
+	/*background-image: url(../images/sitebbg.jpg);*/
+	/*background-color: #282828;*/
+	font-family: champ;
+}
+
+footer {
+	background-color: #00642E;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	margin: auto;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.mainContainer {
+	font-size: 25px;
+	width: 100%;
+	display: table;
+}
+
+.leftContainer {
+	background-color: #BFD9CB;
+	color: #000000;
+	display: table-cell;
+	height: 100%;
+	width: 15%;
+	padding-top: 15px;
+}
+
+.rightContainer {
+	display: table-cell;
+	height: 100%;
+	padding-left:10px;
+	width: 90%;
+	padding-right:10px;
+	color: #000000;
+	background-color: #F0F0F5;
+
+}
+
+.rightContainer h1 {
+
+	text-indent: 25px;
+}
+
+.leftContainer h3 {
+	text-align: center;
+}
+
+.leftContainer h4 {
+	text-indent: 10px;
+}
+
+#socialMedia {
+	margin: auto;
+	margin-bottom: 24px;
+	background-image:url(../images/social-media.png);
+	background-repeat: no-repeat;
+	width: 260px;
+	height: 140px;
+	margin-left: 15px;
+	position: relative;
+}
+
+.firstRow {
+	width: 23px;
+	height: 23px;
+	border: 0;
+	position: absolute;
+	top: 3px;
+}
+
+#faceBook {
+	left: 4px;
+}
+
+#Twitter {
+	left: 31px;
+}
+
+#Pinterest {
+	left: 58px;
+}
+
+#googlePlus {
+	left: 85px;
+}
+
+#mySpace {
+	left: 112px;
+}
+
+#Linkedin {
+	left: 139px;
+}
+
+.thirdRow {
+	width: 23px;
+	height: 23px;
+	border: 0;
+	position: absolute;
+	top: 57px;
+}
+
+#dropBox {
+	left: 4px;
+}
+
+#Skype {
+	left: 58px;
+}
+
+#Yahoo {
+	left: 166px;
+}
+
+@font-face {
+	font-family: champ;
+	src: url(../font/champ-bold.ttf);
+}
+
+@font-face {
+	font-family: sig;
+	src: url(../font/sig.ttf);
+}
+
+/* *********************************************************
+   		This is for the Nav Bar
+   ********************************************************* */
+#nav {
+	background-color: #00642E;
+}
+
+#navBar {
+	text-align: left;
+}
+
+#navBar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100%;
+	margin: auto;
+	font-size: 20px;
+	font-family: champ;
+}
+
+#navBar ul li{
+	display: inline-block;
+}
+
+#navBar ul li:hover {
+	background-color: #28784D;
+}
+
+#navBar ul li a{
+	color: #FFFFFF;
+	display: inline-block;
+	margin: 16px 10.7px 16px 10.5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#navBar li #active {
+	text-transform: uppercase;
+}
+
+#nav ul li:hover ul{
+	display: block;
+}
+
+#nav ul ul {
+	display: none;
+	position: absolute;
+	background-color: #28784D;
+	border: 5px solid #00642E;
+	border-top: 0;
+	margin-left: -5px;
+	max-width: 150px;
+}
+
+#nav ul ul li {
+	display: block;
+}
+
+#nav ul li img {
+	vertical-align: middle;
+	padding-left: 3px;
+}
+
+#nav ul ul li a:hover{
+	color: #00642E;
+}
+
+#rotateImg {
+	transition: transform 0.5s ease-out;
+}
+
+#rotate:hover #rotateImg {
+	transform: rotate(180deg);
+}
+
+/* *********************************************************
+    	This is for the Home page
+   ********************************************************* */
+.honestyUnderline {
+	text-decoration: underline;
+}
+
+#Sig {
+	font-family: sig;
+	font-size: 50px;
+
+}
+
+.innerLinks {
+	margin-top: -20px;
+	margin-bottom: -10px;
+}
+
+#lastHome {
+	margin-bottom: 20px;
+}
+
+.homeText {
+	border-radius: 5px;
+	padding-left: 25px;
+
+}
+
+.innerLinks li a, .innerLinks {
+	list-style-type: none;
+	text-decoration: none;
+	color: #000000;
+}
+
+.innerLinks li a:hover {
+	text-transform: uppercase;
+}
+
+/* *********************************************************
+   		This is for the Gallery
+   ********************************************************* */
+#galleryLeft p {
+	padding-left: 25px;
+}
+
+.Slides {
+	margin: auto;
+	top: 20px;
+	border: 2px solid #FFFFFF;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 10px #000000;
+
+}
+
+.Slides td {
+	border: 2px solid #FFFFFF;
+}
+
+.Slides figcaption {
+	text-align: center;
+}
+
+.InFo {
+	padding: 10px;
+}
+
+.InFo a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.InFo a:hover {
+	color: #28784D;
+}
+
+aside {
+	margin: auto;
+}
+
+aside ul {
+	list-style-type: none;
+}
+
+aside li a {
+	color: #000000;
+	margin-bottom: 5px;
+	text-decoration: none;
+
+}
+
+aside li {
+	margin-bottom: 5px;
+
+}
+
+aside ul li a:hover {
+	text-transform: uppercase;
+}
+
+/* *********************************************************
+   		This is for the Video
+   ********************************************************* */
+.indent {
+	padding-left: 25px;
+}
+
+#vid {
+	width: 640px;
+}
+
+#vid figcaption {
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+.indent a:hover {
+	color: #28784D;
+}
+
+.indent a {
+	color: #000000;
+}
+
+.buttons {
+	width: 210px;
+	margin-bottom: 5px;
+	background-color: #28784D;
+	border: 3px double #FFFFFF;
+}
+
+/* *********************************************************
+   		This is for the Audio
+   ********************************************************* */
+
+#aud figcaption {
+	width: 350px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#aud {
+	margin-top: 32px;
+}
+
+/* *********************************************************
+   		This is for the HTML5
+   ********************************************************* */
+
+.htmlForms {
+	color: #000000;
+}
+
+.link {
+	color: #000000;
+}
+
+.link:hover {
+	color: #28784D;
+}
+
+#html5 h3 {
+	padding-left: 25px;
+}
+form {
+	padding-left: 25px;
+}
+
+/* *********************************************************
+   		This is for the Tables With CSS
+   ********************************************************* */
+
+#cssTable {
+	width: 500px;
+	border-spacing: 20px;
+	border: 2px solid #BFD9CB;
+	margin-bottom: 20px;
+	border-collapse: separate;
+	color: #FFFFFF;
+}
+
+.Market, .To, .Went, .Piggy, .Little, .This {
+	text-align: left;
+}
+
+#cssTable td {
+	padding: 5px;
+	border:1px solid #FFFFFF;
+}
+
+#tableHead {
+	text-align: center;
+	margin-bottom: -2px;
+}
+
+#tableFigure {
+	padding: 10px 60px;
+	width: 540px;
+	border: 5px solid #BFD9CB;
+}
+
+.This {
+	background-color: #3fbf7f;
+}
+
+.Little {
+	background-color: #32cc98;
+}
+
+.Piggy {
+	background-color: #26d8ba;
+}
+
+.Went {
+	background-color: #19e5e5;
+}
+
+.To {
+	background-color: #0cccf2;
+}
+
+.Market {
+	background-color: #01a9fd;
+}

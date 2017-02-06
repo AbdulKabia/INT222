@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignment 2 Home</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/sitecss.css" type="text/css" media="screen" />
+  </head>
+  <body>
+  	<nav>
+      <div id="nav">
+          <div id="navBar">
+    	       <ul>
+        	      <li><a href="index.html" id="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="html5.html">HTML 5</a></li>
+                <li><a href="tables.html">Tables with CSS</a></li>
+                <li id="rotate"><a href="#">More <img src="images/arrow.png" alt="" id="rotateImg"/></a>
+                  <ul>
+                    <li><a href="guestbook/index.html">Guestbook</a></li>
+                    <li><a href="css/sitecss.css">CSS Used</a></li>
+                    <li><a href="extra/index.html">Extra</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="mainContainer">
+        <div class="leftContainer">
+            <h3>Recommended Links</h3>
+            <h4>HTML 5</h4>
+            <ul class="innerLinks">
+                <li><a href="http://www.html5rocks.com/en/" target="_blank">HTML5 Rocks</a></li>
+                <li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
+            </ul>
+            <h4>CSS</h4>
+            <ul class="innerLinks">
+                <li><a href="http://www.csszengarden.com/" target="_blank">CSS Zen Garden</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+            </ul>
+            <h4>Javascript</h4>
+            <ul class="innerLinks">
+                <li><a href="https://www.codecademy.com/learn/javascript" target="_blank">Codecademy</a></li>
+                <li><a href="https://www.javascript.com/" target="_blank">Javascript</a></li>
+            </ul>
+
+            <h3>Social Media</h3>
+            <div id="socialMedia">
+                <!-- First Row -->
+                <a href="http://facebook.com" target="_blank" title="Face Book" class="firstRow" id="faceBook"></a>
+                <a href="https://twitter.com" target="_blank" title="Twitter" class="firstRow" id="Twitter"></a>
+                <a href="https://www.pinterest.com" target="_blank" title="Pinterest" class="firstRow" id="Pinterest"></a>
+                <a href="https://plus.google.com/" target="_blank" title="Google Plus" class="firstRow" id="googlePlus"></a>
+                <a href="https://myspace.com/" target="_blank" title="My Space" class="firstRow" id="mySpace"></a>
+                <a href="https://ca.linkedin.com/" target="_blank" title="Linkedin" class="firstRow" id="Linkedin"></a>
+
+                <!-- Third Row -->
+                <a href="https://www.dropbox.com" target="_blank" title="Drop Box" class="thirdRow" id="dropBox"></a>
+                <a href="http://www.skype.com/en" target="_blank" title="Skype" class="thirdRow" id="Skype"></a>
+                <a href="https://ca.yahoo.com/" target="_blank" title="Yahoo!" class="thirdRow" id="Yahoo"></a>
+            </div>
+        </div>
+
+        <div class="rightContainer">
+              <h1>Home</h1>
+              <p class="homeText">Hello there, visitor and welcome to my website! This website is simply a showcase of the various HTML5 and CSS techniques I've come to learn in INT222. Both HTML5 and CSS are very impressive languages that are capable of bringing even the most complex of website deisgn ideas to life.</p>
+              <p class="homeText">HTML5 is a language that is rapidly growing in functionality and popularity. It is a language that offers it's user both flexibility and many different unique tools for web development. I have included numerous links to the left of this page that I highly reccommend you visit, if you wish to further your knowledge on web development. </p>
+              <p class="homeText" id="lastHome">I declare that this assignment is wholly my own work in accordance with Seneca Academic Policy. I also declare that I did not copy any part of this assignment manually or electronically from any other source (including web sites) except for the information supplied by the INT222 instructors and / or made available in this assignment for my use; nor have I distributed any part(s) of the assignment to other students. <br/><br/> <span id="Sig">Abdulk <br/></span>Signed : <span class="honestyUnderline">Abdul Karim Kabia</span><br/>Date : <span class="honestyUnderline">03/04/2016</span></p>
+        </div>
+    </div>
+
+    <!-- Defining Footer -->
+    <footer>
+        <script>
+          var dt=new Date(document.lastModified);   // Get document last modified date
+          document.write('This page was last updated on '+dt.toLocaleString())
+        </script>
+    </footer>
+  </body>
+</html>

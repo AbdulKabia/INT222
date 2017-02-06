@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML 5</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/sitecss.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <nav>
+      <div id="nav">
+          <div id="navBar">
+    	       <ul>
+        	      <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="html5.html" id="active">HTML 5</a></li>
+                <li><a href="tables.html">Tables with CSS</a></li>
+                <li id="rotate"><a href="#">More <img src="images/arrow.png" alt="" id="rotateImg"/></a>
+                  <ul>
+                    <li><a href="guestbook/index.html">Guestbook</a></li>
+                    <li><a href="css/sitecss.css">CSS Used</a></li>
+                    <li><a href="extra/index.html">Extra</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="mainContainer">
+      <div class="leftContainer">
+        <h3>New Attributes in HTML5</h3>
+          <ol>
+            <li>autofocus="autofocus"</li>
+              <li>placeholder="This is a palceholder"</li>
+              <li>required="required"</li>
+              <li>select &amp; datalist</li>
+              <li>type="email"</li>
+              <li>type="url"</li>
+          </ol>
+
+          <h3>Social Media</h3>
+          <div id="socialMedia">
+            <!-- First Row -->
+              <a href="http://facebook.com" target="_blank" title="Face Book" class="firstRow" id="faceBook"></a>
+              <a href="https://twitter.com" target="_blank" title="Twitter" class="firstRow" id="Twitter"></a>
+              <a href="https://www.pinterest.com" target="_blank" title="Pinterest" class="firstRow" id="Pinterest"></a>
+              <a href="https://plus.google.com/" target="_blank" title="Google Plus" class="firstRow" id="googlePlus"></a>
+              <a href="https://myspace.com/" target="_blank" title="My Space" class="firstRow" id="mySpace"></a>
+              <a href="https://ca.linkedin.com/" target="_blank" title="Linkedin" class="firstRow" id="Linkedin"></a>
+
+              <!-- Third Row -->
+              <a href="https://www.dropbox.com" target="_blank" title="Drop Box" class="thirdRow" id="dropBox"></a>
+              <a href="http://www.skype.com/en" target="_blank" title="Skype" class="thirdRow" id="Skype"></a>
+              <a href="https://ca.yahoo.com/" target="_blank" title="Yahoo!" class="thirdRow" id="Yahoo"></a>
+        </div>
+      </div>
+
+    	<div class="rightContainer" id=html5>
+        <h1>HTML 5</h1>
+        <h3>HTML5 new form attributes</h3>
+        <p class="indent">HTML5 introduced new attributes that can be used along with the form input tag. These new attributes can help make your forms appear and behave any which way you'd like.</p>
+        <form method="post" action="https://zenit.senecac.on.ca/~emile.ohan/cgi-bin/echo-p.pl">
+        	<p>How to set up Autofocus</p>
+        	<input type="text" name="entry01" id="entry01" class="htmlForms" autofocus /><br/> &lt;input type="text" name="entry01" id="entry01" class="htmlForms" autofocus="autofocus" /><hr/>
+            <p>How to set up a Placeholder</p>
+            <input type="text" name="entry02" id="entry02" class="htmlForms" placeholder="This is a placeholder"/><br/> &lt;input type="text" name="entry02" id="entry02" class="htmlForms" placeholder="This is a placeholder"/><hr/>
+            <p>How to set required for an entry</p>
+            <input type="text" name="entry03" id="entry03" class="htmlForms" required title="This field is required!"/><br/>&lt;input type="text" name="entry03" id="entry03" class="htmlForms" required="required" title="This field is required!"/> <br/> Click this button to see the required field in action<br/>
+            <input type="submit" class="buttons" id="submit" value="Submit" /><hr/>
+            <p>How to create a list/datalist</p>
+            <select name="entry04" class="htmlForms">
+            	<option value="">Select one</option>
+                <option value="Youtube">Youtube</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Instagram">Instagram</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Pinterest">Pinterest</option>
+            </select>
+            <input type="text" class="htmlForms" list="subjectNames" placeholder="Select one" name="entry04.5" />
+ 				    <datalist id="subjectNames">
+    				<option value="">Select one</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Pinterest">Pinterest</option>
+ 				</datalist><br/>
+             <p>Code for list on left:<br/>
+                &lt;select name="entry04" class="htmlForms"><br/>
+                    &lt;option value="">Select one&lt;/option><br/>
+                    &lt;option value="APC100">APC100&lt;/option><br/>
+                    &lt;option value="EAC150">EAC250&lt;/option><br/>
+                    &lt;option value="ICA002">ICA002&lt;/option><br/>
+                    &lt;option value="IPC144">IPC144&lt;/option><br/>
+                    &lt;option value="ULI101">ULI101&lt;/option><br/>
+                    &lt;option value="IOS110">IOS110&lt;/option><br/>
+            	&lt;/select></p>
+             <p>Code for datalist on right:<br/>
+            	&lt;input type="text" class="htmlForms" list="subjectNames" placeholder="Select one" name="entry04.5" /><br/>
+   					  &lt;datalist id="subjectNames"><br/>
+      				&lt;option value="APC100">APC100&lt;/option><br/>
+      				&lt;option value="EAC150">EAC250&lt;/option><br/>
+      				&lt;option value="ICA002">ICA002&lt;/option><br/>
+     					&lt;option value="IPC144">IPC144&lt;/option><br/>
+      				&lt;option value="ULI101">ULI101&lt;/option><br/>
+      				&lt;option value="IOS110">IOS110&lt;/option> <br/>
+ 				      &lt;/datalist><hr/>
+             <p>How to ensure a valid email address format</p>
+             <input type="email" name="entry05" id="entry05" class="htmlForms"/><br/>
+                &lt;input type="email" name="entry05" id="entry05" class="htmlForms"/><br/>
+                Enter some information on the <a href="#entry03" class="link">required</a> field above, then enter any email address in this field WITHOUT the "@" symbol and click the submit button to see this field in action.<br/>
+             <input type="submit" class="buttons" value="Submit" /><hr/>
+             <p>How to ensure a valid url format</p>
+             <input type="url" name="entry06" id="entry06" class="htmlForms"/><br/>
+             &lt;input type="url" name="entry06" id="entry06" class="htmlForms"/><br/>
+             Enter some information on the <a href="#entry03" class="link">required</a> field above, then enter any random text in this field and click the submit button to see this field in action.<br/>
+             <input type="submit" class="buttons" value="Submit"/><br/><br/>
+        </form>
+      </div>
+    </div>
+
+
+
+    <!-- Defining Footer -->
+    <footer>
+        <script>
+          var dt=new Date(document.lastModified);   // Get document last modified date
+          document.write('This page was last updated on '+dt.toLocaleString())
+        </script>
+    </footer>
+  </body>
+</html>

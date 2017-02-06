@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/sitecss.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <nav>
+      <div id="nav">
+          <div id="navBar">
+    	       <ul>
+        	      <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html" id="active">Video</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="html5.html">HTML 5</a></li>
+                <li><a href="tables.html">Tables with CSS</a></li>
+                <li id="rotate"><a href="#">More <img src="images/arrow.png" alt="" id="rotateImg"/></a>
+                  <ul>
+                    <li><a href="guestbook/index.html">Guestbook</a></li>
+                    <li><a href="css/sitecss.css">CSS Used</a></li>
+                    <li><a href="extra/index.html">Extra</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="mainContainer">
+        <div class="leftContainer">
+        	<h3>Video Control Options</h3>
+          <aside>
+            <form>
+              <button type="button" class="buttons" value="" onclick="video.play();">Play</button><br/>
+              <button type="button" class="buttons" value="" onclick="video.pause();">Pause</button><br/>
+              <button type="button" class="buttons" value="" onclick="video.load();video.play();">Restart</button><br/>
+              <button type="button" class="buttons" value="" onclick="video.load();video.controls=true;">Show Controls</button><br/>
+              <button type="button" class="buttons" value="" onclick="video.load();video.controls=false;">Remove Controls</button>
+            </form>
+          </aside>
+            <h3>Social Media</h3>
+            <div id="socialMedia">
+            	<!-- First Row -->
+                <a href="http://facebook.com" target="_blank" title="Face Book" class="firstRow" id="faceBook"></a>
+                <a href="https://twitter.com" target="_blank" title="Twitter" class="firstRow" id="Twitter"></a>
+                <a href="https://www.pinterest.com" target="_blank" title="Pinterest" class="firstRow" id="Pinterest"></a>
+                <a href="https://plus.google.com/" target="_blank" title="Google Plus" class="firstRow" id="googlePlus"></a>
+                <a href="https://myspace.com/" target="_blank" title="My Space" class="firstRow" id="mySpace"></a>
+                <a href="https://ca.linkedin.com/" target="_blank" title="Linkedin" class="firstRow" id="Linkedin"></a>
+
+                <!-- Third Row -->
+                <a href="https://www.dropbox.com" target="_blank" title="Drop Box" class="thirdRow" id="dropBox"></a>
+                <a href="http://www.skype.com/en" target="_blank" title="Skype" class="thirdRow" id="Skype"></a>
+                <a href="https://ca.yahoo.com/" target="_blank" title="Yahoo!" class="thirdRow" id="Yahoo"></a>
+        	  </div>
+        </div>
+
+        <div class="rightContainer">
+          	<h1>Video</h1>
+              <h3 class="indent">Video implementation in HTML5</h3>
+              <p class="indent">A new feature in HTML5 allows developers to have videos display and play on their websites. It is a very useful feature to use if you wish to reach out to your visitors through means of video.</p>
+              <p class="indent">This is a short, yet informative video that instructs the viewer on how to install Google Chrome on their machine. <br/>Credits to Helton's Computer Repair for the video.<br/><a href="https://www.youtube.com/channel/UC-WG38txBSoEWpqcGYZk3Yg" target="_blank">Click here</a> to visit his Youtube page</p>
+              <figure id="vid">
+              	<figcaption>How to Install Google Chrome</figcaption>
+              	<video controls>
+                      <source src="misc/video.mp4" type="video/mp4">
+                      <source src="misc/video.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                </video>
+                <script>
+                   var video = document.getElementsByTagName('video')[0];
+                </script>
+
+              </figure>
+      	</div>
+    </div>
+
+    <!-- Defining Footer -->
+    <footer>
+        <script>
+          var dt=new Date(document.lastModified);   // Get document last modified date
+          document.write('This page was last updated on '+dt.toLocaleString())
+        </script>
+    </footer>
+  </body>
+</html>

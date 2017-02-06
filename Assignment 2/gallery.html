@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/sitecss.css" type="text/css" media="screen" />
+  </head>
+  <body id="Top">
+    <nav>
+      <div id="nav">
+          <div id="navBar">
+    	       <ul>
+        	      <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" id="active">Gallery</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="html5.html">HTML 5</a></li>
+                <li><a href="tables.html">Tables with CSS</a></li>
+                <li id="rotate"><a href="#">More <img src="images/arrow.png" alt="" id="rotateImg"/></a>
+                  <ul>
+                    <li><a href="guestbook/index.html">Guestbook</a></li>
+                    <li><a href="css/sitecss.css">CSS Used</a></li>
+                    <li><a href="extra/index.html">Extra</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="mainContainer">
+      <div class="leftContainer">
+          <h3>Countries I want to Visit</h3>
+          <aside>
+              <ul>
+                  <li><a href="http://www.visitcalifornia.com/" target="_blank">California</a></li>
+                  <li><a href="http://www.australia.com/en-ca" target="_blank">Australia</a></li>
+                  <li><a href="http://www.japan-guide.com/" target="_blank">Japan</a></li>
+                  <li><a href="http://www.spain.info/en_CA/" target="_blank">Spain</a></li>
+              </ul>
+          </aside>
+
+          <h3>Social Media</h3>
+            <div id="socialMedia">
+                  <!-- First Row -->
+                  <a href="http://facebook.com" target="_blank" title="Face Book" class="firstRow" id="faceBook"></a>
+                  <a href="https://twitter.com" target="_blank" title="Twitter" class="firstRow" id="Twitter"></a>
+                  <a href="https://www.pinterest.com" target="_blank" title="Pinterest" class="firstRow" id="Pinterest"></a>
+                  <a href="https://plus.google.com/" target="_blank" title="Google Plus" class="firstRow" id="googlePlus"></a>
+                  <a href="https://myspace.com/" target="_blank" title="My Space" class="firstRow" id="mySpace"></a>
+                  <a href="https://ca.linkedin.com/" target="_blank" title="Linkedin" class="firstRow" id="Linkedin"></a>
+
+                  <!-- Third Row -->
+                  <a href="https://www.dropbox.com" target="_blank" title="Drop Box" class="thirdRow" id="dropBox"></a>
+                  <a href="http://www.skype.com/en" target="_blank" title="Skype" class="thirdRow" id="Skype"></a>
+                  <a href="https://ca.yahoo.com/" target="_blank" title="Yahoo!" class="thirdRow" id="Yahoo"></a>
+        </div>
+    </div>
+    <div class="rightContainer" id="galleryLeft">
+            <h1>Photo Gallery</h1>
+            <p>A capital city (or simply capital) is the municipality enjoying primary status in a country, state, province, or other region, usually as its seat of government. A capital is typically a city that physically encompasses the offices and meeting places of its respective government; the status as capital is often designated by its law or constitution.</p>
+                    <table class="Slides">
+                        <tr>
+                            <td>
+                                <figure>
+                                <img src="images/edmonton-skyline.png">
+                                <figcaption>Edmonton</figcaption>
+                            </figure>
+                            </td>
+                            <td class="InFo">This picture is of the Edmonton Skyline. Edmonton is the capital of Alberta, Canada. It's population from the 2014 census was 877,926, making it Alberta's second largest city and Canada's fifth largest municipality. It is on the North Saskatchewan River and is the centre of the Edmonton Capital Region.<br/><br/><a href="#Top">&gt;&gt; Top of page &lt;&lt;</a></td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <table class="Slides">
+                        <tr>
+                            <td>
+                                <figure>
+                                <img src="images/quebec-city-frontenac.png">
+                                <figcaption>Quebec City</figcaption>
+                            </figure>
+                            </td>
+                            <td class="InFo">This is the Frontenac, it is located in Quebec City, which is the capital of Quebec. In 2011, the recorded population of Quebec City was 516,622 people! According to the federal and provincial governments, Qu&eacute;bec is the city's official name in both French and English.<br/><br/><a href="#Top">&gt;&gt; Top of page &lt;&lt;</a></td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <table class="Slides">
+                        <tr>
+                            <td>
+                                <figure>
+                                <img src="images/ottawa.png">
+                                <figcaption>Ottawa</figcaption>
+                            </figure>
+                            </td>
+                            <td class="InFo">Ottawa is the capital city of Canada. The 2011 census reported a population of 883,391 within the city, making it the fourth-largest city in Canada. The City of Ottawa has since estimated it had a population of 951,727 in 2014.The city is the most educated in Canada, with several post-secondary, research, and cultural institutions. Ottawa also has the highest standard of living in the nation and low unemployment. <br/><br/><a href="#Top">&gt;&gt; Top of page &lt;&lt;</a></td>
+                        </tr>
+                    </table>
+                    <br/>
+        </div>
+    </div>
+
+    <!-- Defining Footer -->
+    <footer>
+        <script>
+          var dt=new Date(document.lastModified);   // Get document last modified date
+          document.write('This page was last updated on '+dt.toLocaleString())
+        </script>
+    </footer>
+  </body>
+</html>

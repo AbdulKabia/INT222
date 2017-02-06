@@ -1,0 +1,187 @@
+/* *********************************************************
+   		CSS Common to ALL pages
+   ********************************************************* */
+body {
+	/*background-image: url(../images/sitebbg.jpg);*/
+	/*background-color: #282828;*/
+	font-family: champ;
+}
+
+footer {
+	background-color: #00642E;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	margin: auto;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.mainContainer {
+	font-size: 25px;
+	width: 100%;
+	display: table;
+}
+
+.leftContainer {
+	background-color: #BFD9CB;
+	color: #000000;
+	display: table-cell;
+	height: 100%;
+	width: 15%;
+	padding-top: 15px;
+}
+
+.rightContainer {
+	display: table-cell;
+	height: 100%;
+	padding-left:10px;
+	width: 90%;
+	padding-right:10px;
+	color: #000000;
+	background-color: #F0F0F5;
+
+}
+
+.rightContainer h1 {
+
+	text-indent: 25px;
+}
+
+.leftContainer h3 {
+	text-align: center;
+}
+
+.leftContainer h4 {
+	text-indent: 10px;
+}
+
+@font-face {
+	font-family: champ;
+	src: url(../font/champ-bold.ttf);
+}
+
+/* *********************************************************
+   		This is for the Nav Bar
+   ********************************************************* */
+#nav {
+	background-color: #00642E;
+}
+
+#navBar {
+	text-align: left;
+}
+
+#navBar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100%;
+	margin: auto;
+	font-size: 20px;
+	font-family: champ;
+}
+
+#navBar ul li{
+	display: inline-block;
+}
+
+#firstItem{
+	border-right: 1px solid #FFFFFF;
+}
+
+#navBar ul li:hover {
+	background-color: #28784D;
+}
+
+#navBar ul li a{
+	color: #FFFFFF;
+	display: inline-block;
+	margin: 16px 10.7px 16px 10.5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#navBar li #active {
+	text-transform: uppercase;
+}
+
+#nav ul li:hover ul{
+	display: block;
+}
+
+#nav ul ul {
+	display: none;
+	position: absolute;
+	background-color: #28784D;
+	border: 5px solid #00642E;
+	border-top: 0;
+	margin-left: -5px;
+	max-width: 150px;
+}
+
+#nav ul ul li {
+	display: block;
+}
+
+#nav ul li img {
+	vertical-align: middle;
+	padding-left: 3px;
+}
+
+#nav ul ul li a:hover{
+	color: #00642E;
+}
+
+#rotateImg {
+	transition: transform 0.5s ease-out;
+}
+
+#rotate:hover #rotateImg {
+	transform: rotate(180deg);
+}
+
+.indent {
+	padding-left: 25px;
+}
+
+.buttons {
+	width: 210px;
+	margin-bottom: 5px;
+	background-color: #28784D;
+	border: 3px double #FFFFFF;
+}
+
+form {
+	padding-left: 25px;
+}
+
+textarea {
+	resize: none;
+	width:500px;
+}
+
+#guests {
+	margin: auto;
+}
+
+#guests a {
+	color: #000000;
+}
+
+#guests a:hover {
+	color: #28784D;
+}
+
+table {
+	text-align:left;
+}
+
+#topLeft {
+	vertical-align: top;
+}
+
+#Framez {
+	background-color: #FFFFFF;
+}

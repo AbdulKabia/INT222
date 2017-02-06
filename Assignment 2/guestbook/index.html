@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guest Book</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="guestbook.css" type="text/css" media="screen" />
+
+  </head>
+  <body>
+    <nav>
+      <div id="nav">
+          <div id="navBar">
+    	       <ul>
+        	      <li><a href="../index.html">Home</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../video.html">Video</a></li>
+                <li><a href="../audio.html">Audio</a></li>
+                <li><a href="../html5.html">HTML 5</a></li>
+                <li><a href="../tables.html">Tables with CSS</a></li>
+                <li id="rotate"><a href="#">More <img src="../images/arrow.png" alt="" id="rotateImg"/></a>
+                  <ul>
+                    <li><a href="index.html"  id="active">Guestbook</a></li>
+                    <li><a href="../css/sitecss.css">CSS Used</a></li>
+                    <li><a href="../extra/index.html">Extra</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="mainContainer">
+    	<div class="rightContainer">
+        	<h1>Guest Book</h1>
+          <p style="padding: 0px 10px; color: red;">**NOTE: This guestbook is no longer connected to the cgi that does all the signing as I am no longer taking the course that gave me access to said cgi. <br>SO PLEASE DON'T BOTHER SIGNING IT, IT'S JUST HERE FOR SHOW**</p>
+          <p class="indent">Sign my Guestbook and be a part of my amazing website!</p>
+        	<form method="post" id="guests" name="guests">
+            	<table>
+                	<tr>
+                    	<td>Name:</td>
+                        <td><input type="text" size="45" maxlength="40" required name="guest" id="guest" class="htmlForms"/></td>
+                    </tr>
+                    <tr>
+                    	<td>E-mail Address:</td>
+                        <td><input type="text" size="60" maxlength="60" required name="email" id="email" class="htmlForms"/></td>
+                    </tr>
+                    <tr>
+                    	<td>City:</td>
+                        <td><input type="text" size="35" maxlength="30" required name="city" id="city" class="htmlForms"/></td>
+                    </tr>
+                    <tr>
+                    	<td id="topLeft">Province:</td>
+                        <td>
+                        	<select name="province" id="province" size="15" required class="htmlForms">
+                            	<optgroup label="Province">
+                                    <option value="Alberta">Alberta</option>
+                                    <option value="British Columbia">British Columbia</option>
+                                    <option value="Manitoba">Manitoba</option>
+                                    <option value="New Brunswick">New Brunswick</option>
+                                    <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                    <option value="Nova Scotia">Nova Scotia</option>
+                                    <option value="Ontario" selected>Ontario</option>
+                                    <option value="Prince Edward Island">Prince Edward Island</option>
+                                    <option value="Quebec">Quebec</option>
+                                    <option value="Saskatchewan">Saskatchewan</option>
+                                </optgroup>
+                                <optgroup label="Territories">
+                                	<option value="Northwest Territories">Northwest Territories</option>
+                                    <option value="Nunavut">Nunavut</option>
+                                    <option value="Yukon">Yukon</option>
+                                </optgroup>
+                              </select>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>Web Page URL:</td>
+                        <td><input type="text" size="60" maxlength="60" name="web_url" id="web_url" class="htmlForms"/></td>
+                    </tr>
+                    <tr>
+                    	<td>Web Page Title:</td>
+                        <td><input type="text" size="25" name="web_title" id="web_title" class="htmlForms"/></td>
+                    </tr>
+                    <tr>
+                    	<td>Comments:</td>
+                        <td><textarea name="comments" id="comment" class="htmlForms"></textarea></td>
+                    </tr>
+                </table>
+                <button type="submit" value="Sign Guess Book" class="buttons">Sign Guest Book</button>
+                <button type="reset" value="Start Over" class="buttons">Start Over</button><br/>
+                <a href="javascript:unhide('on');">View Guest Book</a> / <a href="javascript:unhide('off');">Hide Guest Book</a>
+            </form>
+            <div id="viewguests">
+    			<iframe id="Framez" src="https://zenit.senecac.on.ca/~emile.ohan/cgi-bin/viewguestbook.cgi"></iframe>
+			</div>
+      <br/>
+    </div>
+  </div>
+
+
+
+    <!-- Defining Footer -->
+    <footer>
+        <script>
+          var dt=new Date(document.lastModified);   // Get document last modified date
+          document.write('This page was last updated on '+dt.toLocaleString())
+        </script>
+    </footer>
+  </body>
+</html>
